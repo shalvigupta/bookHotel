@@ -1,0 +1,26 @@
+{
+  "name": "bookhotel",
+  "version": "1.0.0",
+  "description": "bookHotel with playwright",
+  "main": "index.js",
+  "scripts": {
+    "test":"cucumber-js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shalvigupta/bookHotel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shalvigupta/bookHotel/issues"
+  },
+  "homepage": "https://github.com/shalvigupta/bookHotel#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.1",
+    "ts-node": "^10.9.2"
+  }
+}
