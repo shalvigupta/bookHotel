@@ -3,7 +3,7 @@
 "formatOptions":{
     "snippetInterface":"async-await"
 },
-        "paths": ["src/tests/features/booking.feature"
+        "paths": ["src/tests/features/"
     ],
         "publishQuiet": true,
         "dryRun": false,

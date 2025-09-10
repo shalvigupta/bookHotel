@@ -1,4 +1,4 @@
-import { Before, After, BeforeAll, AfterAll, Status } from "@cucumber/cucumber";
+import { Before, After, BeforeAll, AfterAll, Status, setDefaultTimeout } from "@cucumber/cucumber";
 import {chromium, Page, Browser, BrowserContext} from "@playwright/test";
 import { pageFixture } from "./pageFixture";
 
@@ -6,13 +6,18 @@ let browser:Browser;
 let page:Page;
 let context:BrowserContext;
 
+setDefaultTimeout(60 * 1000 * 2)
+
 BeforeAll(async function(){
-     browser = await chromium.launch({headless:true});
+     browser = await chromium.launch({headless:false});
+     
 })
+
 Before(async function(){
 context =await browser.newContext();
  page = await browser.newPage();
-pageFixture.page = page;
+ pageFixture.page = page;
+
 await page.goto("https://automationintesting.online");
 })
 

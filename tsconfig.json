@@ -6,7 +6,11 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": ".",          // added for path resolution
+    "paths": {               // optional if you use aliases
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src", "eslint.config.mjs"]
 }
