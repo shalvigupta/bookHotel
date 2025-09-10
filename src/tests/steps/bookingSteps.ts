@@ -23,8 +23,6 @@ import { pageFixture } from "../../hooks/pageFixture";
             const year = future.getFullYear();
             return `${day}/${month}/${year}`;
         }
-
-        todayDate = getFutureDateFormatted(0);
         checkOutDate = getFutureDateFormatted(daysToAdd);
         // Fill Check Out
     const checkOutBox = pageFixture.page.locator('div').filter({
