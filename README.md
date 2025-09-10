@@ -30,3 +30,6 @@ This will run the two scenarios included in the feature file.
 ### **CI/CD**
 
 This project is configured to run tests automatically on Git using GitHub Actions. Refer to the repository documentation for more details on the continuous integration workflow.
+
+On every push the tests run again
+Linting has been done along with Page Factory and Page object model
