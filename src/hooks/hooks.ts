@@ -9,7 +9,7 @@ let context:BrowserContext;
 setDefaultTimeout(60 * 1000 * 2)
 
 BeforeAll(async function(){
-     browser = await chromium.launch({headless:true});
+     browser = await chromium.launch({headless:false});
      
 })
 
